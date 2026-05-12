@@ -5,8 +5,7 @@ export default function WelcomePage({ navigation }) {
 
     useEffect(() => {
         setTimeout(() => {
-            console.log("here navigate to home")
-            // navigation.navigate('HomePage')
+            navigation.navigate('Home')
         }, 2000)
     }, [])
 

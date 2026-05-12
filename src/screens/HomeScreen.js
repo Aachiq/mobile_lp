@@ -8,7 +8,7 @@ export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Header />
-      <Text style={styles.title}>Staging App</Text>
+      {/* <Text style={styles.title}>Staging App</Text> */}
 
       <FlatList
         data={newsData}
@@ -30,11 +30,11 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  title: {
-    fontSize: 28,
-    marginBottom: 20,
-    fontWeight: "bold",
-  },
+  // title: {
+  //   fontSize: 28,
+  //   marginBottom: 20,
+  //   fontWeight: "bold",
+  // },
   card: {
     backgroundColor: "#eee",
     padding: 15,
