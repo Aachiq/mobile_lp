@@ -4,10 +4,10 @@ import newsData from "../data/news";
 import Header from "../components/Header";
 import BottomNavigation from "../components/BottomNavigation";
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Header/>
+      <Header />
       <Text style={styles.title}>Staging App</Text>
 
       <FlatList
@@ -21,7 +21,7 @@ export default function HomeScreen() {
         )}
       />
 
-      <BottomNavigation/>
+      <BottomNavigation navigation={navigation} />
     </View>
   );
 }

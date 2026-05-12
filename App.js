@@ -4,15 +4,17 @@ import HomeScreen from './src/screens/HomeScreen';
 import AboutScreen from './src/screens/AboutScreen';
 import ContactScreen from './src/screens/ContactScreen';
 import WelcomePage from './src/screens/WelcomePage';
+import AppNavigator from './src/AppNavigator';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <HomeScreen/>
+      {/* <HomeScreen/> */}
       {/* <AboutScreen/> */}
       {/* <ContactScreen/> */}
       {/* <WelcomePage/> */}
+      <AppNavigator/>
     </View>
   );
 }

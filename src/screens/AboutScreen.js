@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-export default function AboutScreen() {
+export default function AboutScreen({navigtaion}) {
     return (
         <View style={{
             flex: 1,
@@ -9,6 +9,10 @@ export default function AboutScreen() {
             alignItems: "center"
         }}>
             <Text>About Page</Text>
+             <Button
+                title="Go Back"
+                onPress={() => navigation.goBack()}
+            />
         </View>
     );
 }
