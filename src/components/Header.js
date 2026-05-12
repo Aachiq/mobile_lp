@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 
 export default function Header() {
   return (
-    <View style={{backgroundColor: "blue", padding: 26, justifyContent: "space-between", 
+    <View style={{backgroundColor: "blue", padding: 22, justifyContent: "space-between", 
         flexDirection: "row", // alwyas define flexDirection to apply flex 4
         // marginTop: 15 // this marin make header move from top to not be attached with status
     }}

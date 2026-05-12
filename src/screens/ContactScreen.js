@@ -1,16 +1,11 @@
 import React from "react";
-import { View, Text } from "react-native";
-import Header from "../components/Header";
-import BottomNavigation from "../components/BottomNavigation";
+import { Text } from "react-native";
+import AppLayout from "../components/AppLayout";
 
-export default function ContactScreen({navigation}) {
+export default function ContactScreen({ navigation }) {
   return (
-    <View style={{ flex:1 }}>
-      <Header/>
+    <AppLayout navigation={navigation}>
       <Text>Contact Page</Text>
-
-      <BottomNavigation navigation={navigation} />
-      
-    </View>
+    </AppLayout>
   );
 }
